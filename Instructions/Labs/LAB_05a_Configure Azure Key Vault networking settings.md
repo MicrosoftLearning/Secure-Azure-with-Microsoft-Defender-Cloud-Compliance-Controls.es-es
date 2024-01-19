@@ -8,7 +8,7 @@ lab:
 >**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tiene acceso administrativo. 
 
 
-Puedes usar Azure Portal para configurar la red de Azure Key Vault para que funcione con otras aplicaciones y servicios de Azure. 
+Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault para trabajar con otras aplicaciones y servicios de Azure. 
 
 ---
 
@@ -55,7 +55,7 @@ Puedes usar Azure Portal para configurar la red de Azure Key Vault para que func
 
 2. Ve al almacén de claves que has creado anteriormente.
 
-3. Seleccione **Redes** y, luego, seleccione la pestaña **Firewalls y redes virtuales**.
+3. Seleccione **Redes** y, luego, elija la pestaña **Firewalls and virtual networks** (Firewalls y redes virtuales).
 
 4. En Permitir acceso desde, selecciona **Permitir el acceso público desde redes virtuales y direcciones IP específicas.**
 

@@ -43,36 +43,45 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |Resource group|Seleccione **Crear nuevo**. Escribe **CreateSQLEndpointTutorial.** Seleccione **Aceptar**.|
    |**Detalles de instancia**|
    |Nombre de la red virtual|Escribe **myVNet1a.**|
-   |Region|Seleccione **Este de EE. UU**.|  
+   |Region|Seleccione **(EE. UU.) Este de EE. UU.** .|  
     
-5. Seleccione la pestaña **Direcciones IP** o el botón **Siguiente: Direcciones IP** situado en la parte inferior de la página.
+5. Seleccione **Siguiente** para ir a la pestaña **Seguridad**.
+  
+6. Seleccione **Habilitar Azure Bastion** en la sección Azure Bastion de la pestaña Seguridad.
 
-6. En la pestaña **Direcciones IP**, especifique esta información:
+   >**Nota**: Azure Bastion usa el explorador para conectarse a las máquinas virtuales de la red virtual a través de Secure Shell (SSH) o el protocolo de escritorio remoto (RDP) mediante sus direcciones IP privadas. Las máquinas virtuales no necesitan direcciones IP públicas, software cliente ni configuración especial.
 
-   |Configuración|Value|
+7. Escriba o seleccione la siguiente información en el campo **Nombre de host de Azure Bastion**:
+
+   |Configuración|Valor|
    |---|---|
-   |Espacio de direcciones IPv4|Escriba **10.1.0.0/16**.|
+   |Nombre de host de Azure Bastion|Escriba **mybastionhost**|
+   |Nombre de la dirección IP pública de Azure Bastion|Seleccione **Crear una dirección IP pública**|
+   |Añada una dirección IP pública|Escriba **my-bstn-public-ip**|
+   |SKU|Deje el valor predeterminado **Estándar**.|
+   
+8. Seleccione **Aceptar**.
 
-7. En **Nombre de subred**, seleccione la palabra **predeterminada**.
+9. Seleccione **Siguiente** para ir a la pestaña **Seguridad**.
 
-8. En **Editar subred**, especifique esta información:
+10. Seleccione **Siguiente** para continuar a la pestaña **Direcciones IP**.
 
-   |Configuración|Value|
+11. En el cuadro espacio de direcciones de la columna Subredes, seleccione la palabra subred **predeterminada**.
+
+12. En la plantilla **Editar subred**, escriba o seleccione la siguiente información:
+
+   |Configuración|Valor|
    |---|---|
-   |Nombre de subred|Escribe **mySubnet1a.**|
-   |Intervalo de direcciones de subred|Escriba **10.1.0.0/24**.|
+   |Propósito de la subred|Deje el valor predeterminado **Predeterminado**.|
+   |Nombre|Escriba **mysubnet1a**|
+   |Intervalo de direcciones IPv4|Deje el valor predeterminado **10.0.0/16**|
+   |Dirección inicial|Deje el valor predeterminado **/24 (256 direcciones)**|
 
-9. Seleccione **Guardar**.
+13. Seleccione **Guardar**.
 
-10. Seleccione la pestaña **Seguridad** .
+14. Seleccione **Revisar y crear** en la parte inferior de la pantalla y, cuando se supere la validación, seleccione **Crear**.
 
-11. En **Host bastión,** selecciona **Habilitar.** Escriba esta información:
-    
-    |Configuración|Value|
-    |---|---|
-    |Nombre del bastión|Escriba **MyBastionHost**.|
-    |Espacio de direcciones de AzureBstionSubnet|Escriba **10.1.1.0/24**.|
-    |Dirección IP pública|Seleccione **Crear nuevo**. Para **Nombre,** introduce **Mi BastionIP.** Seleccione **Aceptar**.| 
+    >**Nota**: La implementación de Bastion puede tardar hasta 15 minutos en completar la creación de instancias.
  
 ### Cree una máquina virtual.
 
@@ -100,7 +109,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |Tipo de autenticación|Seleccione **Contraseña**.|
    |Nombre de usuario|Escribe **Tenantadmin2.**|
    |Contraseña|Introduce **Superuser#170.**|
-   |Confirmación de la contraseña|Vuelve a introducir **Superuser#170.**|
+   |Confirmar contraseña|Vuelve a introducir **Superuser#170.**|
    |**Reglas de puerto de entrada**|
    |Selección de puertos de entrada|Seleccione **Ninguno**.|
 
@@ -147,7 +156,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |Location|Seleccione **(EE. UU.) Este de EE. UU.** .|
    |**Autenticación**|
    |Método de autenticación|Seleccione **Uso de la autenticación de SQL**.|
-   |Inicio de sesión de administrador de servidor|Escribe **Tenantadmin2.**|
+   |Inicio de sesión del administrador del servidor|Escribe **Tenantadmin2.**|
    |Contraseña|Introduce **Superuser#170.**|
    |Confirmación de la contraseña|Introduce **Superuser#170.**|
 
@@ -174,7 +183,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 8. En **Crear un punto de conexión privado**, escriba o seleccione esta información:
 
-   |Configuración|Value|
+   |Configuración|Valor|
    |---|---|
    |Suscripción|Seleccione su suscripción.|
    |Resource group|Seleccione **CreateSQLEndpointTutorial**.|
