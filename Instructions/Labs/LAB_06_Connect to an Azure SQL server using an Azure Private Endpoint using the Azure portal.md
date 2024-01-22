@@ -26,7 +26,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 ### Creación de un grupo de recursos y una red virtual.
 
->****: el host bastión se utilizará para conectarse de forma segura a la máquina virtual a fin de probar el punto de conexión privado.
+>**Nota**: El host bastión se utilizará para conectarse de forma segura a la máquina virtual a fin de probar el punto de conexión privado.
 
 1. Inicie una sesión en el explorador e inicie sesión en el [menú de Azure Portal.](https://portal.azure.com/)
    

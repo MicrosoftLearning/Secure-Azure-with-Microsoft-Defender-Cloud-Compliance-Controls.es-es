@@ -168,7 +168,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Configuración|Valor|
    |---|---|
    |Source|Deja el valor predeterminado **Cualquiera**|
-   |Source port ranges|Deje el valor predeterminado, **(*)**|
+   |Rangos del puerto origen|Deje el valor predeterminado, **(*)**|
    |Destino|Selecciona **Grupo de seguridad de aplicaciones**|
    |Grupos de seguridad de aplicaciones de destino|Selecciona **asg-web**|
    |Service|Deja el valor predeterminado **Personalizado**|
@@ -185,7 +185,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Configuración|Valor|
    |---|---|
    |Source|Deja el valor predeterminado **Cualquiera**|
-   |Source port ranges|Deje el valor predeterminado, **(*)**|
+   |Rangos del puerto origen|Deje el valor predeterminado, **(*)**|
    |Destino|Selecciona **Grupo de seguridad de aplicaciones**|
    |Grupo de seguridad de aplicación de destino|Selecciona **asg-mgmt**|
    |Service|Seleccione **RDP**.|
@@ -213,9 +213,9 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |**Detalles de instancia**|
    |Nombre de la máquina virtual|Escribe **vm-1**|
    |Region|Seleccione **(EE.UU.) Este de EE. UU.**|
-   |Opciones de disponibilidad|Deja el valor predeterminado **No se requiere redundancia de la infraestructura**|
-   |Tipo de seguridad|Deje el valor predeterminado **Estándar**|
-   |Imagen|Seleccione **Windows Server 2022 Datacenter - x64 Gen2**|
+   |Opciones de disponibilidad|En el menú desplegable Zona de disponibilidad, seleccione **No se necesita redundancia de la infraestructura**.|
+   |Tipo de seguridad|En el menú desplegable Tipo de seguridad, seleccione **Estándar**.|
+   |Imagen|En el menú desplegable Imagen, seleccione **Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**.|
    |Arquitectura VM|Deja el valor predeterminado **x64**|
    |Ejecución de Azure Spot con descuento|Deja esta casilla desactivada, tal y como está de forma predeterminada|
    |Size|Deja el valor predeterminado **Standard_D2s_v3-2 VCPU, memoria de 8 GiB**|
@@ -223,7 +223,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Tipo de autenticación|Seleccione **Contraseña**.|
    |Nombre de usuario|Escribe **Tenantadmin1**|
    |Contraseña|Introduce **Superuser#150**|
-   |Confirmación de la contraseña|Vuelve a introducir **Superuser#150**|
+   |Confirmar contraseña|Vuelve a introducir **Superuser#150**|
    |**Reglas de puerto de entrada**|
    |Puertos de entrada públicos|Seleccione **Ninguno**.|
  
@@ -257,15 +257,15 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 2. Selecciona **vm-1**
  
-3. Selecciona **Redes** en la sección **Grupos de seguridad de aplicaciones** de **vm-1**
+3. Seleccione **redes** en la sección de **vm-1**.
 
-4. Selecciona la pestaña **Grupos de seguridad de aplicaciones** y después selecciona + **Agregación de grupos de seguridad de aplicaciones**.
+4. Seleccione la pestaña **Grupos de seguridad de aplicaciones** y, a continuación, seleccione **Configurar los grupos de seguridad de aplicaciones**.
 
-   ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/71354544-7b61-4c91-9c40-fb2c596d17e0)
+5. En la plantilla **Configurar los grupos de seguridad de aplicaciones**, seleccione **asg-mgmt** en el menú desplegable **Grupos de seguridad de aplicaciones** y, a continuación, haga clic en el icono **Guardar** en la parte superior de la página de plantilla.
 
-5. En **Agregación de grupos de seguridad de aplicaciones,** selecciona **asg-web.** en la lista de nombres **Grupos de seguridad de aplicaciones** después selecciona **Agregar.**
+![image](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
-6. Repite los pasos anteriores para **vm-2** y selecciona **asg-mgmt** en el menú desplegable **Grupos de seguridad de aplicaciones**.
+6. Repita los pasos anteriores para **vm-2**, seleccionando **asg-web** en el menú desplegable **Grupos de seguridad de aplicaciones**.
 
 > **Resultados**: has creado una infraestructura de red virtual y filtrado el tráfico de red con un grupo de seguridad de red con Azure Portal.
 
