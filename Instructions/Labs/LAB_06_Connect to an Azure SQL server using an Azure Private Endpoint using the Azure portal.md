@@ -99,8 +99,8 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |**Detalles de instancia**|
    |Nombre de la máquina virtual|Escriba **myVM**.|
    |Region|Seleccione **(EE. UU.) Este de EE. UU.** .|
-   |Opciones de disponibilidad|Deje el valor predeterminado **No se requiere redundancia de la infraestructura**.|
-   |Tipo de seguridad|Deje el valor predeterminado **Estándar**.|
+   |Opciones de disponibilidad|En el menú desplegable Zona de disponibilidad, seleccione **No se necesita redundancia de la infraestructura**.|
+   |Tipo de seguridad|En el menú desplegable Tipo de seguridad, seleccione **Estándar**.|
    |Imagen|Seleccione **Windows Server 2022 Datacenter - x64 Gen2**.|
    |Arquitectura VM|Seleccione **x64**.|
    |Ejecución de Azure Spot con descuento|Deja esta casilla desactivada, tal y como está de forma predeterminada|
@@ -189,7 +189,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |Resource group|Seleccione **CreateSQLEndpointTutorial**.|
    |Location|Seleccione **Este de EE. UU**.|
    |Nombre|Escriba **myPrivateSQLendpoint**.|
-   |Recurso secundario de destino|Selecciona **mysqlserver1a.**|
+   |Recurso secundario de destino|Deje el valor predeterminado **SqlServer**.|
    |**Redes**|
    |Virtual network|Selecciona **myVNet1a.**|
    |Subnet|Selecciona **mySubnet1a.**|
