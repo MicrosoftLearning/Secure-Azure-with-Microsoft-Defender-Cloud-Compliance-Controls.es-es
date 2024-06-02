@@ -74,7 +74,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |---|---|
    |Propósito de la subred|Deje el valor predeterminado **Predeterminado**.|
    |Nombre|Escriba **mysubnet1a**|
-   |Intervalo de direcciones IPv4|Deje el valor predeterminado **10.0.0/16**|
+   |Intervalo de direcciones IPv4|Deja el valor predeterminado **10.0.0.0**|
    |Dirección inicial|Deje el valor predeterminado **/24 (256 direcciones)**|
 
 13. Seleccione **Guardar**.
