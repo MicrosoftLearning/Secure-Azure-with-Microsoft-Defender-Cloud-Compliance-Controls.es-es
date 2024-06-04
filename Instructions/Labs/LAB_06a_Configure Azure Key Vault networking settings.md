@@ -40,7 +40,7 @@ Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault 
    |Subscription|Seleccione su suscripción.|
    |Resource group|Escribe **az-rg-1.** Seleccione **Aceptar**.|
    |**Detalles de instancia**|
-   |Nombre del almacén de claves|Escribe **AZAPLKeyVault.**|
+   |Nombre del almacén de claves|El nombre del almacén solo puede contener caracteres alfanuméricos y guiones y no puede comenzar con un número.|
    |Region|Seleccione **Este de EE. UU**.|
    |Plan de tarifa|Valor predeterminado del sistema **Estándar**|
    |Días durante los cuales se conservarán los almacenes eliminados|Valor predeterminado del sistema **90**|
