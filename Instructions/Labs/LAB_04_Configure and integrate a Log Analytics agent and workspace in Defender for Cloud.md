@@ -1,7 +1,7 @@
 ---
 lab:
-  title: "Ejercicio 04: Recopilación de datos de las cargas de trabajo con el agente de Log\_Analytics"
-  module: Module 04 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
+  title: 'Ejercicio 4: Configuración e integración de un agente y un área de trabajo de Log Analytics en Defender for Cloud'
+  module: Module 05 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
 ---
 
 
@@ -46,7 +46,7 @@ Defender for Cloud recopila datos de las máquinas virtuales de Azure, los conju
 
    - Haz clic en **Aplicar** en la parte inferior de la plantilla de aprovisionamiento automático.
    
-![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/c1c812e7-b5ca-4caa-b8e6-34a6e4b325fd)
+![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/c1c812e7-b5ca-4caa-b8e6-34a6e4b325fd)
 
 
 
