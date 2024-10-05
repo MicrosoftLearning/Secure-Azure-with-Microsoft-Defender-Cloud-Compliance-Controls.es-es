@@ -34,7 +34,7 @@ Al recopilar registros y datos, la información se almacena en un área de traba
    |---|---|
    |**Detalles del proyecto**|
    |Subscription|Seleccione su suscripción.|
-   |Resource group|Escriba **azure-rg-1.** Seleccione **Aceptar**.|
+   |Resource group|Escribe **az-rg-1.** Seleccione **Aceptar**.|
    |**Detalles de instancia**|
    |Nombre|Escribe **azwrkspc1a.**|
    |Region|Seleccione **Este de EE. UU**.|
