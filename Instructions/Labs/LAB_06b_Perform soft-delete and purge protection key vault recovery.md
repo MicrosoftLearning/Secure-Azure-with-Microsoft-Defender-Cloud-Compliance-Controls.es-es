@@ -28,11 +28,11 @@ Puedes usar la protección contra purga para prevenir la eliminación de tu alma
    
 2. Seleccione el almacén de claves.
 
-3. Haz clic en la hoja **Propiedades**.
+3. En la hoja **Configuración**, seleccione **Propiedades**.
 
-4. Comprueba si el botón de radio situado junto a la opción de borrado temporal está configurado como **Habilitar protección contra purga.**
+4. Comprueba si el botón de selección situado junto a la eliminación temporal está establecido en **Habilitar protección de purga (aplique un período de retención obligatorio para almacenes eliminados y objetos de almacén).**
 
-5. Si la eliminación temporal no está habilitada en el almacén de claves, haz clic en el botón de radio para habilitar la eliminación temporal y haz clic en **Guardar.**
+5. Si la eliminación temporal no está habilitada en el almacén de claves, haz clic en el botón de selección **Habilitar protección de purga (aplicar un período de retención obligatorio para almacenes eliminados y objetos de almacén)** para habilitar la eliminación temporal y haz clic en **Guardar.**
 
 ![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
 
@@ -45,7 +45,7 @@ Puedes usar la protección contra purga para prevenir la eliminación de tu alma
 
 3. Busca el servicio **Key Vault**. No haga clic en un almacén de claves individual.
 
-4. En la parte superior de la pantalla, haga clic en la opción "Administrar almacenes eliminados"
+4. En la parte superior de la pantalla, haz clic en la opción **Administrar almacenes eliminados**.
 
 5. Se abrirá un panel de contexto en el lado derecho de la pantalla.
 

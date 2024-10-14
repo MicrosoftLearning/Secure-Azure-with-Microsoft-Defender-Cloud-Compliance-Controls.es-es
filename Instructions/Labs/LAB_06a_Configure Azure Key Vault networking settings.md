@@ -55,14 +55,16 @@ Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault 
 
 2. Ve al almacén de claves que has creado anteriormente.
 
-3. Seleccione **Redes** y, luego, elija la pestaña **Firewalls and virtual networks** (Firewalls y redes virtuales).
-
+3. Selecciona **Configuración,** después, **Redes** y, a continuación, la pestaña **Firewalls y redes virtuales**.
+   
 4. En Permitir acceso desde, selecciona **Permitir el acceso público desde redes virtuales y direcciones IP específicas.**
 
 5. En la sección Redes virtuales, selecciona + **Añadir una red virtual,** y después selecciona + **Añadir redes virtuales existentes.**
 
 6. En la plantilla Agregar redes, selecciona tu red virtual creada previamente de la lista desplegable **Redes virtuales** y **Subredes**.
 
-7. En la parte inferior de la plantilla Agregar redes, haz clic en **Agregar.**
+7. En la parte inferior de la plantilla **Agregar redes**, selecciona **Agregar.**
+
+8. En la parte inferior de la pestaña **Firewalls y redes virtuales**, selecciona **Aplicar.**
 
   > **Resultados**: has creado un almacén de claves y configurado el firewall y red virtual del almacén de claves de Azure Portal.

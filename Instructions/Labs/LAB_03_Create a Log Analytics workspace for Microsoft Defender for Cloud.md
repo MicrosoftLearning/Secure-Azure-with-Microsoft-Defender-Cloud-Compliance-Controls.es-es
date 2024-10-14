@@ -20,27 +20,27 @@ Al recopilar registros y datos, la información se almacena en un área de traba
 
 ## Instrucciones del ejercicio 
 
-### Utilice el menú Áreas de trabajo de Log Analytics para crear un área de trabajo.
+### Utiliza el menú Áreas de trabajo de Log Analytics para crear un área de trabajo.
 
-1. Inicie una sesión en el explorador e inicie sesión en el [menú de Azure Portal.](https://portal.azure.com/)
+1. Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
    
-2. En el menú de Azure Portal, introduce **Log Analytics** en el cuadro de búsqueda. Cuando comience a escribir, la lista se filtrará en función de la entrada. Seleccione **Áreas de trabajo de Log Analytics**.
+2. En el menú de Azure Portal, introduce las **áreas de trabajo de Log Analytics** en el cuadro de búsqueda. Cuando comiences a escribir, la lista se filtrará en función de la entrada. Selecciona **Áreas de trabajo de Log Analytics**.
 
-4. Seleccione **Crear**.
+4. Selecciona **Crear**.
 
 5. En la pestaña **Básicos** de **Crear área de trabajo de Log Analytics,** introduce o selecciona esta información:
    
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
-   |Resource group|Escribe **az-rg-1.** Seleccione **Aceptar**.|
+   |Subscription|Selecciona tu suscripción.|
+   |Grupo de recursos|Escribe **az-rg-1.** Selecciona **Aceptar**.|
    |**Detalles de instancia**|
    |Nombre|Escribe **azwrkspc1a.**|
-   |Region|Seleccione **Este de EE. UU**.|
+   |Región|Selecciona **Este de EE. UU**.|
 
-6. Seleccione la **pestaña Revisar y crear** o seleccione el botón azul Revisar y crear situado en la parte inferior de la página.
+6. Selecciona la **pestaña Revisar y crear** o selecciona el botón azul Revisar y crear situado en la parte inferior de la página.
   
-8. Seleccione **Crear**.
+8. Selecciona **Crear**.
 
 > **Resultados:** has creado un área de trabajo de Log Analytics, para recopilar datos de recursos de Azure, y diagnósticos o datos de registro de Azure Storage.
