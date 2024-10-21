@@ -55,11 +55,9 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
   
 6. Seleccione **Siguiente** para continuar a la pestaña **Direcciones IP**.
 
-7. En el cuadro espacio de direcciones de **Subredes**, seleccione la subred **predeterminada**.
+7. En el cuadro de espacio de direcciones de **Subredes**, seleccione la subred **predeterminada**.
 
-8. En el cuadro espacio de direcciones de **Subredes**, selecciona la subred predeterminada.
-
-9. En **Agregar subred**, escriba o seleccione la información siguiente:
+8. En la plantilla **Editar subred**, escriba o seleccione la siguiente información:
 
    |Configuración|Valor|
    |---|---|
@@ -71,10 +69,9 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
 
+9. Seleccione **Guardar**.
 
-10. Seleccione **Guardar**.
-
-11. Seleccione **Revisar y crear** en la parte inferior de la pantalla y, cuando se supere la validación, seleccione **Crear**.
+10. Seleccione **Revisar y crear** en la parte inferior de la pantalla y, cuando se supere la validación, seleccione **Crear**.
 
 ### Creación de grupos de seguridad de aplicaciones para poder agrupar servidores con funciones similares, como los servidores web.
 
@@ -135,7 +132,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Nombre|Escribe **nsg-1**|
    |Region|Seleccione **Este de EE. UU**.|  
     
-4. Selecciona **Revisión** + crear**.
+4. Seleccione **Revisar + crear**.
 
 5. Seleccione **Crear**.
 
@@ -149,9 +146,9 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 3. Seleccione **Subredes** en la sección **Configuración** de **nsg-1**.
 
-4. En la página **Subredes**, seleccione **+Asociar**:
+4. En la página **nsg-1 | Subredes**, selecciona + **Asociar:**
 
- ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
+ ![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
 
 5. En **Asociación de subred**, selecciona **vnet-1 (test-rg)** en **Red virtual**.
 
@@ -161,7 +158,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 1. Seleccione **Reglas de seguridad de entrada** en la sección **Configuración** de **nsg-1**.
    
-2. En la página **Reglas de seguridad de entrada**, seleccione **+Agregar**:
+2. En la página **nsg-1 | Reglas de seguridad de entrada**, selecciona + **Agregar:**
 
 3. Cree una regla de seguridad que permita a los puertos 80 y 443 para el grupo de seguridad de la aplicación **asg-web**. En la página **Agregar regla de seguridad de entrada**, especifique o seleccione esta información:
 
@@ -229,9 +226,9 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
  
 4. Selecciona **Siguiente: discos** y después **Siguiente: redes.
 
-5. En la pestaña **Redes**, escriba o seleccione la siguiente información:
+5. En la pestaña **Redes**, comprueba o escribe la siguiente información:
 
-   |Parámetro|Valor|
+   |Configuración|Valor|
    |---|---|
    |**Interfaz de red**|
    |Red virtual|Selecciona **vnet-1**|
