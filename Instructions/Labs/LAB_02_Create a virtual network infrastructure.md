@@ -45,7 +45,7 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
+   |Subscription|Seleccione la suscripción.|
    |Resource group|Selecciona **Crear nuevo**, introduce **az-rg-1**, y selecciona **Aceptar**|
    |**Detalles de instancia**|
    |Nombre de la red virtual|Escriba **vnet-1**|
@@ -86,7 +86,7 @@ Un grupo de seguridad de aplicaciones (ASG) permite agrupar servidores con funci
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
+   |Subscription|Seleccione la suscripción.|
    |Resource group|Selecciona **az-rg-1**|
    |**Detalles de instancia**|
    |Nombre|Escribe **asg-web**|
@@ -101,7 +101,7 @@ Un grupo de seguridad de aplicaciones (ASG) permite agrupar servidores con funci
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
+   |Subscription|Seleccione la suscripción.|
    |Resource group|Selecciona **az-rg-1**|
    |**Detalles de instancia**|
    |Nombre|Escribe **asg-mgmt**|
@@ -126,7 +126,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
+   |Subscription|Seleccione la suscripción.|
    |Resource group|Selecciona **az-rg-1**|
    |**Detalles de instancia**|
    |Nombre|Escribe **nsg-1**|
