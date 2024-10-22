@@ -5,10 +5,10 @@ lab:
 ---
 
 
->**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tiene acceso administrativo. 
+>**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tienes acceso administrativo. 
 
 
-Al recopilar registros y datos, la información se almacena en un área de trabajo. Un área de trabajo tiene un identificador de área de trabajo y un identificador de recurso únicos. El nombre del área de trabajo debe ser único para un grupo de recursos determinado. Después de crear un área de trabajo, configure los orígenes de datos y las soluciones para almacenar sus datos allí. 
+Al recopilar registros y datos, la información se almacena en un área de trabajo. Un área de trabajo tiene un identificador de área de trabajo y un identificador de recurso únicos. El nombre del área de trabajo debe ser único para un grupo de recursos determinado. Después de crear un área de trabajo, configura los orígenes de datos y las soluciones para almacenar sus datos allí. 
 
 ---
 
@@ -26,21 +26,21 @@ Al recopilar registros y datos, la información se almacena en un área de traba
    
 2. En el menú de Azure Portal, introduce las **áreas de trabajo de Log Analytics** en el cuadro de búsqueda. Cuando comiences a escribir, la lista se filtrará en función de la entrada. Selecciona **Áreas de trabajo de Log Analytics**.
 
-4. Selecciona **Crear**.
+4. En la página **Áreas de trabajo de Log Analytics**, selecciona **+ Crear.**
 
-5. En la pestaña **Básicos** de **Crear área de trabajo de Log Analytics,** introduce o selecciona esta información:
+5. En la página **Aspectos básicos** de **Crear área de trabajo de Log Analytics,** introduce o selecciona esta información:
    
-   |Configuración|Value|
+   |Configuración|Valor|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Selecciona tu suscripción.|
-   |Grupo de recursos|Escribe **az-rg-1.** Selecciona **Aceptar**.|
+   |Suscripción|Selecciona tu suscripción.|
+   |Grupo de recursos|Escribe **az-rg-1.**|
    |**Detalles de instancia**|
    |Nombre|Escribe **azwrkspc1a.**|
    |Región|Selecciona **Este de EE. UU**.|
 
-6. Selecciona la **pestaña Revisar y crear** o selecciona el botón azul Revisar y crear situado en la parte inferior de la página.
+6. Selecciona la pestaña **Revisar + crear** de la parte inferior de la página.
   
-8. Seleccione **Crear**.
+8. Selecciona **Crear.**
 
 > **Resultados:** has creado un área de trabajo de Log Analytics, para recopilar datos de recursos de Azure.
