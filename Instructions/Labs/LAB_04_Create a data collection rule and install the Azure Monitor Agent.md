@@ -1,11 +1,11 @@
 ---
 lab:
   title: 'Ejercicio 4: Instalación del agente de Azure Monitor y creación de una regla de recopilación de datos'
-  module: Module 05 - Create a data collection rule and install the Azure Monitor Agent
+  module: Module 05 - Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
 ---
 
 
->**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tienes acceso administrativo. 
+>**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tiene acceso administrativo. 
 
 
 Las reglas de recopilación de datos (DCR) especifican los datos que se van a recopilar, mientras que el agente de Azure Monitor aplica estas reglas para recopilar registros y métricas de máquinas virtuales en Azure, otras nubes o entornos locales. Juntos, permiten una supervisión coherente y centralizada en distintos entornos.
@@ -18,7 +18,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
 
 - Selección de recursos de destino para la recopilación de datos.
 
-- Instala un agente de Azure Monitor.
+- Instale un agente de Azure Monitor.
   
 - Configuración de orígenes y destinos de los datos.
 
@@ -32,7 +32,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
 
 >**Nota**: crea la regla de recopilación de datos en la misma región que el área de trabajo de Log Analytics o el área de trabajo de Azure Monitor. Puedes asociarla a máquinas o contenedores de cualquier suscripción o grupo de recursos del inquilino. El agente de Azure Monitor se instalará automáticamente en los recursos virtuales de Azure.
 
-1. En el cuadro de búsqueda de la parte superior del portal, escribe las **reglas de recopilación de datos**. Selecciona **Reglas de recopilación de datos** en los resultados de la búsqueda.
+1. En el cuadro de búsqueda de la parte superior del portal, escribe las **reglas de recopilación de datos.** Selecciona **Reglas de recopilación de datos** en los resultados de la búsqueda.
   
 2. En la página **Reglas de recopilación de datos**, selecciona **+ Crear.**
   
@@ -45,10 +45,10 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |**Detalles de la regla**|
     |Nombre de regla|**dcr-1**|
     |Suscripción|Selecciona tu suscripción.|
-    |Grupo de recursos|**az-rg-1**|
+    |Resource group|**az-rg-1**|
     |Región|**Este de EE. UU.**|
     |Tipo de plataforma|**Windows**|
-    |Punto de conexión de recopilación de datos|Deja la configuración predeterminada en Ninguno.|
+    |Punto de conexión de recopilación de datos|Deja la configuración predeterminada en Ninguno|
 
     ![imagen](https://github.com/user-attachments/assets/35c527cf-499d-44b9-966f-0114b8643ef2)
 
@@ -77,13 +77,13 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |Configuración|Valor|
     |---|---|
     |**Agregar origen de datos**|
-    |Selecciona el tipo de origen de datos y los datos que se recopilarán para los recursos.|
+    |Seleccione el tipo de origen de datos y los datos que se recopilarán para los recursos.|
     |Tipo de origen de datos*|**Registros de eventos de Windows**|
     |Elige Aspectos básicos para habilitar la recopilación de registros de eventos.|
     |Configura los niveles y registros de eventos que se van a recopilar:|
-    |Aplicación|**Advertencia**, **Error**, **Crítico**|
+    |Application|**Crítico**, **Error**, **Advertencia**|
     |Seguridad|**Auditoría correcta**, **Error de auditoría**|
-    |Sistema|**Advertencia**, **Error**, **Crítico**|
+    |Sistema|**Crítico**, **Error**, **Advertencia**|
 
     ![imagen](https://github.com/user-attachments/assets/5bc891ea-8cef-4baa-95c4-a432364179b1)
 
@@ -94,9 +94,9 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |Configuración|Valor|
     |---|---|
     |**Agregar origen de datos**|
-    |Destino|**+ Agregar destino**|
+    |Destino|**+ Incorporación del destino**|
     |Tipo de destino|**Registros de Azure Monitor**|
-    |Suscripción|Selecciona tu suscripción.|
+    |Suscripción|Seleccione su suscripción.|
     |Detalles del destino|**azwrkspc1a (az-rg-1**)|
 
     ![imagen](https://github.com/user-attachments/assets/e00c17c8-5a70-4caa-8504-92f482cc5e57)
@@ -111,4 +111,4 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
 
 16. En la parte inferior de la página **Revisar + crear**, selecciona **Crear.**
 
-> **Resultados**: has instalado el agente de Azure Monitor y creado una regla de recopilación de datos..
+> **Resultados**: has instalado el agente de Azure Monitor y creado una regla de recopilación de datos.
