@@ -37,15 +37,15 @@ Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault 
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
-   |Resource group|Escribe **az-rg-1.** Seleccione **Aceptar**.|
+   |Subscription|Selecciona tu suscripción.|
+   |Grupo de recursos|Escribe **az-rg-1.**|
    |**Detalles de instancia**|
-   |Nombre del almacén de claves|El nombre del almacén solo puede contener caracteres alfanuméricos y guiones y no puede comenzar con un número.|
-   |Region|Seleccione **Este de EE. UU**.|
-   |Plan de tarifa|Valor predeterminado del sistema **Estándar**|
-   |Días durante los cuales se conservarán los almacenes eliminados|Valor predeterminado del sistema **90**|
+   |Nombre del almacén de claves|El nombre del almacén solo debe contener caracteres alfanuméricos y guiones y no puede empezar por un número. *Ejemplo: az-securevault150*|
+   |Region|Selecciona **Este de EE. UU**.|
+   |Plan de tarifa|Deja la configuración predeterminada en Estándar.|
+   |Días durante los cuales se conservarán los almacenes eliminados|Deja la configuración predeterminada en 90.|
 
-7. Seleccione la **pestaña Revisar y crear** o seleccione el botón azul Revisar y crear situado en la parte inferior de la página.
+7. Selecciona la **pestaña Revisar y crear** o selecciona el botón azul Revisar y crear situado en la parte inferior de la página.
   
 8. Seleccione **Crear**.
 
@@ -61,10 +61,10 @@ Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault 
 
 5. En la sección Redes virtuales, selecciona + **Añadir una red virtual,** y después selecciona + **Añadir redes virtuales existentes.**
 
-6. En la plantilla Agregar redes, selecciona tu red virtual creada previamente de la lista desplegable **Redes virtuales** y **Subredes**.
+6. En la plantilla **Agregar redes**, selecciona tu red virtual creada previamente de la lista desplegable **Redes virtuales** y **Subredes**.
 
-7. En la parte inferior de la plantilla **Agregar redes**, selecciona **Agregar.**
+7. En la parte inferior de la plantilla **Agregar redes**, selecciona **Habilitar** y, después, **Agregar**. 
 
-8. En la parte inferior de la pestaña **Firewalls y redes virtuales**, selecciona **Aplicar.**
+8. En la parte inferior de la página **Firewalls y redes virtuales**, selecciona **Aplicar.**
 
   > **Resultados**: has creado un almacén de claves y configurado el firewall y red virtual del almacén de claves de Azure Portal.

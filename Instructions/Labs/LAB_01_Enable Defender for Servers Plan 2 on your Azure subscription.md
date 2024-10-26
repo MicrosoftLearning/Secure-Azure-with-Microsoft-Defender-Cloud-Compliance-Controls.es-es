@@ -24,36 +24,20 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 
 1. Inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
 
-2. En Azure Portal, en el cuadro de texto Buscar recursos, servicios y documentos de la parte superior de la página, escriba Microsoft Defender for Cloud y presione la tecla Entrar.
+2. En Azure Portal, en el cuadro de texto Buscar recursos, servicios y documentos de la parte superior de la página de Azure Portal, escribe **Microsoft Defender for Cloud** y presiona la tecla **Entrar**.
 
-3. En **Microsoft Defender for Cloud**, **hoja de Administración**, ve a **Configuración del entorno**. Expande las carpetas de configuración del entorno hasta que se muestre la sección **Suscripción de Ignite** y, después, haz clic en la **suscripción de Ignite** para ver los detalles.
+3. En **Microsoft Defender for Cloud**, **hoja de Administración**, ve a **Configuración del entorno**. Expande las carpetas de configuración del entorno hasta que se muestre la sección **Suscripción** y después haz clic en la **suscripción** para ver los detalles.
 
-4. Activa el plan Microsoft Defender seleccionando tu **Suscripción** y el **área de trabajo de Log Analytics** que has creado en el módulo 02.
-
-5. Haz clic en el botón azul grande **Actualizar** situado en la parte inferior de la página.
+   ![imagen](https://github.com/user-attachments/assets/32d2168e-458f-4872-9bf8-e8f050f24751)
    
-    ![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/256bd584-b04f-4d5b-81a7-c83dd1af3b4f)
+3. En la hoja **Configuración**, en **Planes de Defender**, expande **Protección de cargas de trabajo en la nube (CWP)**.
+
+4. En la lista **Plan de protección de cargas de trabajo en la nube (CWP)**, selecciona **Servidores**. En la parte derecha de la página, cambia el **Estado** de **Desactivado** a **Activado** y después haz clic en **Guardar**.
+
+5. Para revisar los detalles del **Plan de servidor 2**, selecciona **Cambiar plan >**.
+
+   Nota: Al habilitar el plan de servidores protección de cargas de trabajo en la nube (CWP) de Desactivado a Activado, se habilita el plan 2 de Microsoft Defender para servidores.
+
+   ![imagen](https://github.com/user-attachments/assets/869a38e4-464e-4be0-b02e-ce1b96f02978)
    
-6. En la hoja **Introducción** de **Microsoft Defender for Cloud**, ve a la pestaña **Instalar agentes**, y desplázate hacia abajo.
-
-    ![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/8120ec8f-23dc-4636-bc45-b415c7894b8c)
-
-7. Activación de la casilla asociada a la suscripción en la que se instalarán los agentes y haz clic en **Instalar agentes.**
-
-### Acciones alternativas para la actualización de tu suscripción de Microsoft Defender for Cloud.
-
-1. Vaya a **Microsoft Defender for Cloud** y, en el panel de navegación izquierdo de la sección Administración, haga clic en **Configuración del entorno**.
-   
-2. En la hoja **Microsoft Defender for Cloud, configuración del entorno**, haz clic en **Expandir todo,** desplázate hacia abajo hasta que aparezca tu suscripción y haz clic en la suscripción pertinente.
-
-3. En la hoja **Configuración, planes de Defender**, selecciona **Habilitar todos los planes** y haz clic en **Guardar.**
-
-   ![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/4b684851-98ae-4720-a3e3-afa99aab8c43)
-
-
-
-
-   
-
-   
-> **Resultados**: has actualizado y habilitado Defender for Cloud en tu suscripción de Azure.
+> **Resultados**: has habilitado Microsoft Defender para servidores Plan 2 en tu suscripción.

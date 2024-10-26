@@ -25,8 +25,6 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
 - Creación de una red virtual y asociar un grupo de seguridad de red a una subred.
   
 - Implementación de máquinas virtuales y asociar sus interfaces de red a los grupos de seguridad de aplicación.
-  
-- Probar los filtros de tráfico.
 
 ## Instrucciones del ejercicio 
 
@@ -38,18 +36,18 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
    
 2. En el cuadro de búsqueda de la parte superior del portal, escribe **Redes virtuales.** En los resultados de la búsqueda, seleccione **Redes virtuales**.
 
-3. En la página Redes virtuales, selecciona + **Crear.**
+3. En la página **Redes virtuales**, seleccione **y Crear**.
 
 4. En la pestaña **Datos básicos** de **Crear una red virtual**, introduzca o seleccione la siguiente información:
    
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
-   |Resource group|Selecciona **Crear nuevo**, introduce **az-rg-1**, y selecciona **Aceptar**|
+   |Subscription|Selecciona tu suscripción.|
+   |Grupo de recursos|Escribe **az-rg-1.**|
    |**Detalles de instancia**|
-   |Nombre de la red virtual|Escriba **vnet-1**|
-   |Region|Seleccione **(EE.UU.) Este de EE. UU.**|  
+   |Nombre de la red virtual|Escriba **vnet-1**.|
+   |Region|Seleccione **(EE. UU.) Este de EE. UU.** .|  
     
 5. Seleccione **Siguiente** para ir a la pestaña **Seguridad**.
   
@@ -62,12 +60,12 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
    |Configuración|Valor|
    |---|---|
    |**Detalles de subred**|
-   |Plantilla de subred|Deja el valor **predeterminado**|
-   |Nombre|Escriba **subnet-1**|
-   |Dirección inicial|Deja el valor predeterminado **10.0.0.0**|
-   |Tamaño de la subred|Deje el valor predeterminado de **/24(256 direcciones)**.
+   |Propósito de subred|Deja la configuración predeterminada en Predeterminada.|
+   |Nombre|Escriba **subnet-1**.|
+   |Dirección inicial|Deja la configuración predeterminada en 10.0.0.0/16.|
+   |Tamaño de la subred|Deja la configuración predeterminada en /24 (256 direcciones).
 
-![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
+![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
 
 9. Seleccione **Guardar**.
 
@@ -78,19 +76,19 @@ Puede usar un grupo de seguridad de red de Azure para filtrar el tráfico de red
 Un grupo de seguridad de aplicaciones (ASG) permite agrupar servidores con funciones similares, como servidores web.
 
 1. En el cuadro de búsqueda que aparece en la parte superior del portal, escriba **Grupo de seguridad de aplicaciones**. Seleccione **Grupos de seguridad de aplicaciones** en los resultados de la búsqueda.
-   
-2. Seleccione **Crear**.
 
-3. En la pestaña **Aspectos básicos** de **Crear un grupo de seguridad de aplicación**, escriba o seleccione esta información:
+2. En la página **Grupo de seguridad de aplicaciones**, selecciona **Crear**.
+
+3. En la pestaña **Aspectos básicos** de **Crear un grupo de seguridad de aplicaciones**, escribe o selecciona la siguiente información:
    
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
-   |Resource group|Selecciona **az-rg-1**|
+   |Subscription|Selecciona tu suscripción.|
+   |Resource group|Selecciona **az-rg-1.**|
    |**Detalles de instancia**|
-   |Nombre|Escribe **asg-web**|
-   |Region|Seleccione **Este de EE. UU**.|  
+   |Nombre|Escriba **asg-web**.|
+   |Region|Selecciona **Este de EE. UU**.|  
     
 4. Seleccione **Revisar + crear**.
 
@@ -101,11 +99,11 @@ Un grupo de seguridad de aplicaciones (ASG) permite agrupar servidores con funci
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
-   |Resource group|Selecciona **az-rg-1**|
+   |Subscription|Selecciona tu suscripción.|
+   |Resource group|Selecciona **az-rg-1.**|
    |**Detalles de instancia**|
-   |Nombre|Escribe **asg-mgmt**|
-   |Region|Seleccione **Este de EE. UU**.|
+   |Nombre|Escriba **asg-mgmt**.|
+   |Region|Seleccione **(EE. UU.) Este de EE. UU.** .|
 
 7. Seleccione **Revisar + crear**.
 
@@ -118,19 +116,19 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 1. En el cuadro de búsqueda que aparece en la parte superior del portal, escriba **Grupo de seguridad de red**. En los resultados de la búsqueda, seleccione **Grupos de seguridad de red**.
 
 >**Nota**: En los resultados de búsqueda de grupos de seguridad de red, es posible que veas grupos de seguridad de red (clásicos). Seleccione Grupos de seguridad de red.
-   
-2. Seleccione **+ Create** (+ Crear).
+
+2. En la página **Grupos de seguridad de red**, seleccione **+ Crear**.
 
 3. En la pestaña **Aspectos básicos** de **Crear grupo de seguridad de red**, escriba o seleccione esta información:
    
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Seleccione su suscripción.|
-   |Resource group|Selecciona **az-rg-1**|
+   |Subscription|Selecciona tu suscripción.|
+   |Resource group|Selecciona **az-rg-1.**|
    |**Detalles de instancia**|
-   |Nombre|Escribe **nsg-1**|
-   |Region|Seleccione **Este de EE. UU**.|  
+   |Nombre|Escriba **nsg-1**.|
+   |Region|Selecciona **Este de EE. UU**.|  
     
 4. Seleccione **Revisar + crear**.
 
@@ -164,16 +162,16 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
    |Configuración|Valor|
    |---|---|
-   |Source|Deja el valor predeterminado **Cualquiera**|
-   |Rangos del puerto origen|Deje el valor predeterminado, **(*)**|
-   |Destino|Selecciona **Grupo de seguridad de aplicaciones**|
-   |Grupos de seguridad de aplicaciones de destino|Selecciona **asg-web**|
-   |Service|Deja el valor predeterminado **Personalizado**|
-   |Intervalos de puertos de destino|Escriba **80,443**.|
+   |Source|Deje el valor predeterminado, **Cualquiera**.|
+   |Source port ranges|Deja la configuración predeterminada en los intervalos de puerto.|
+   |Destino|Seleccione **Grupo de seguridad de aplicación**.|
+   |Grupos de seguridad de aplicaciones de destino|Seleccione **asg-web**.|
+   |Service|Deja la configuración predeterminada en Personalizada.|
+   |Intervalos de puertos de destino|Escriba **80 443**.|
    |Protocolo|seleccione **TCP**.|
-   |Acción|Deja el valor predeterminado **Permitir**|
-   |Prioridad|Deja el valor predeterminado **100**|
-   |Nombre|Introduce **allowweball**|
+   |Action|Deja la configuración predeterminada en Permitir.|
+   |Priority|Deja la configuración predeterminada en 100.|
+   |Nombre|Introduce **allowweball.**|
 
 4. Seleccione **Agregar**.
 
@@ -181,16 +179,16 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
    |Configuración|Valor|
    |---|---|
-   |Source|Deja el valor predeterminado **Cualquiera**|
-   |Rangos del puerto origen|Deje el valor predeterminado, **(*)**|
-   |Destino|Selecciona **Grupo de seguridad de aplicaciones**|
-   |Grupo de seguridad de aplicación de destino|Selecciona **asg-mgmt**|
-   |Service|Seleccione **RDP**.|
-   |Intervalos de puertos de destino|Deja el valor predeterminado **3389**|
-   |Protocolo|Deja el valor predeterminado **TCP**|
-   |Acción|Deja el valor predeterminado **Permitir**|
-   |Prioridad|Deja el valor predeterminado **110**|
-   |Nombre|Introduce *allowrdall*|
+   |Source|Deje el valor predeterminado, **Cualquiera**.|
+   |Source port ranges|Deja la configuración predeterminada en los intervalos de puerto.|
+   |Destino|Seleccione **Grupo de seguridad de aplicación**.|
+   |Grupo de seguridad de aplicación de destino|Seleccione **asg-mgmt**.|
+   |Servicio|Seleccione **RDP**.|
+   |Intervalos de puertos de destino|Deja la configuración predeterminada en 3389.|
+   |Protocolo|Deja la configuración predeterminada en TCP.|
+   |Action|Deja la configuración predeterminada en Permitir.|
+   |Priority|Deja la configuración predeterminada en 110.|
+   |Nombre|Introduce **allowrdpall.**|
    
 6. Seleccione **Agregar**.
 
@@ -200,47 +198,47 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 2. En **Máquinas virtuales**, seleccione **+ Crear** y, después, **Máquina virtual de Azure**.
    
-3. En **Crear una máquina virtual**, escriba o seleccione los datos siguientes en la pestaña **Conceptos básicos**:
+3. En **Crear una máquina virtual**, escribe o selecciona los datos siguientes en la pestaña **Conceptos básicos**:
 
    |Configuración|Value|
    |---|---|
    |**Detalles del proyecto**|
-   |Suscripción|Seleccione la suscripción.|
-   |Resource group|Selecciona **az-rg-1**|
+   |Suscripción|Seleccione su suscripción.|
+   |Resource group|Selecciona **az-rg-1.**|
    |**Detalles de instancia**|
-   |Nombre de la máquina virtual|Escribe **vm-1**|
-   |Region|Seleccione **(EE.UU.) Este de EE. UU.**|
+   |Nombre de la máquina virtual|Escriba **vm-1**.|
+   |Region|Seleccione **(EE. UU.) Este de EE. UU.** .|
    |Opciones de disponibilidad|En el menú desplegable Zona de disponibilidad, seleccione **No se necesita redundancia de la infraestructura**.|
    |Tipo de seguridad|En el menú desplegable Tipo de seguridad, seleccione **Estándar**.|
-   |Imagen|En el menú desplegable Imagen, seleccione **Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**.|
-   |Arquitectura VM|Deja el valor predeterminado **x64**|
-   |Ejecución de Azure Spot con descuento|Deja esta casilla desactivada, tal y como está de forma predeterminada|
-   |Size|Deja el valor predeterminado **Standard_D2s_v3-2 VCPU, memoria de 8 GiB**|
+   |Imagen|En el menú desplegable Imagen, selecciona **Windows Server 2022 Datacenter: Azure Edition - x64 Gen2.**|
+   |Arquitectura VM|Deja la configuración predeterminada en x64.|
+   |Ejecución de Azure Spot con descuento|Deja la configuración predeterminada en desactivada.|
+   |Size|Deja la configuración predeterminada en Standard_D2s_v3-2 VCPU, 8 GiB de memoria.|
    |**Cuenta de administrador**|
    |Tipo de autenticación|Seleccione **Contraseña**.|
-   |Nombre de usuario|Escribe **Tenantadmin1**|
-   |Contraseña|Introduce **Superuser#150**|
-   |Confirmar contraseña|Vuelve a introducir **Superuser#150**|
+   |Nombre de usuario|Escribe **Tenantadmin1.**|
+   |Contraseña|Introduce **Superuser#150.**|
+   |Confirmación de la contraseña|Vuelve a introducir **Superuser#150.**|
    |**Reglas de puerto de entrada**|
    |Puertos de entrada públicos|Seleccione **Ninguno**.|
  
-4. Selecciona **Siguiente: discos** y después **Siguiente: redes.
+4. Seleccione **Siguiente: Discos** y, luego, **Siguiente: Redes**.
 
 5. En la pestaña **Redes**, comprueba o escribe la siguiente información:
 
    |Configuración|Valor|
    |---|---|
    |**Interfaz de red**|
-   |Red virtual|Selecciona **vnet-1**|
-   |Subnet|Selecciona **valor predeterminado (10.0.0.0/24)**|
-   |Dirección IP pública|Deja el valor predeterminado, que es una nueva dirección IP pública|
+   |Virtual network|Seleccione **vnet-1**.|
+   |Subnet|Seleccione **valor predeterminado (10.0.0.0/24)** .|
+   |Dirección IP pública|Deja la configuración predeterminada en nueva IP pública.|
    |Grupo de seguridad de red de NIC|Seleccione **Ninguno**.|
    
-6. Seleccione la pestaña **Revisar y crear** o el botón **Revisar y crear** que encontrará en la parte inferior de la pantalla.
+6. Seleccione la pestaña **Revisar y crear** o el botón **Revisar y crear** en la parte inferior de la página.
 
 7. Seleccione **Crear**. La máquina virtual puede tardar unos minutos en implementarse.
   
-   - Creación de la segunda máquina virtual
+   - Creación de la segunda máquina virtual.
 
    - Repita los pasos anteriores para crear una segunda máquina virtual denominada **vm-2**.
 
@@ -252,13 +250,13 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 1. En el cuadro de búsqueda que aparece en la parte superior del portal, escriba **Máquina virtual**. En los resultados de la búsqueda, seleccione **Máquinas virtuales**.
 
-2. Selecciona **vm-1**
+2. Seleccione **vm-1**.
  
-3. Seleccione **redes** en la sección de **vm-1**.
+3. Selecciona **redes** en la sección de **vm-1**.
 
-4. Selecciona la pestaña **Grupos de seguridad de aplicaciones** y, después, selecciona **+ Agregar grupos de seguridad de aplicaciones**.
+4. Selecciona **Grupos de seguridad de aplicaciones** en la sección **Redes** de **vm-1. Selecciona **+ Agregar grupos de seguridad de aplicaciones**.
 
-5. En la plantilla **Agregar grupos de seguridad de aplicaciones**, selecciona **asg-mgmt** en la plantilla **Grupos de seguridad de aplicaciones** y, a continuación, haz clic en el icono **Agregar** en la parte inferior de la página de plantilla.
+5. En la plantilla **Agregar grupos de seguridad de aplicaciones**, selecciona **asg-mgmt** en la plantilla **Grupos de seguridad de aplicaciones** y, a continuación, haz clic en el botón **Agregar** en la parte inferior de la página de plantilla.
 
 ![imagen](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
@@ -266,4 +264,4 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 > **Resultados**: has creado una infraestructura de red virtual y filtrado el tráfico de red con un grupo de seguridad de red con Azure Portal.
 
-> **Nota**: No elimines los recursos de este laboratorio, ya que son necesarios para los siguientes ejercicios: Ejercicio 03b: Habilitar el acceso Just-In-Time en máquinas virtuales, Ejercicio 05a: Configuración de firewall y redes virtuales de Key Vault y Ejercicio 05b: Configuración de la recuperación de Azure Key Vault con eliminación temporal y protección contra purga.
+> **Nota**: no elimines los recursos de este laboratorio, ya que son necesarios para los siguientes ejercicios: Ejercicio 05: Habilitar el acceso Just-In-Time en máquinas virtuales, Ejercicio 06a: Configuración de firewall y redes virtuales de Key Vault.
