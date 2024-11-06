@@ -5,7 +5,7 @@ lab:
 ---
 
 
->**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tiene acceso administrativo. 
+>**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tienes acceso administrativo. 
 
 
 El objetivo principal de este ejercicio es proporcionar experiencia práctica en la configuración y habilitación del Plan 2 de Microsoft Defender para servidores dentro de una suscripción a Azure. Esto te permitirá supervisar y proteger tus recursos en la nube frente a amenazas de seguridad. 
@@ -28,7 +28,7 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 
 3. En **Microsoft Defender for Cloud**, **hoja de Administración**, ve a **Configuración del entorno**. Expande las carpetas de configuración del entorno hasta que se muestre la sección **suscripción** y, después, haz clic en la **suscripción** para ver los detalles.
 
-   ![imagen](https://github.com/user-attachments/assets/32d2168e-458f-4872-9bf8-e8f050f24751)
+   ![imagen](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
 3. En la hoja **Configuración**, en **Planes de Defender**, expande **Protección de cargas de trabajo en la nube (CWP)**.
 
@@ -37,7 +37,7 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 5. Para revisar los detalles del **Plan 2 de Microsoft Defender para servidores**, selecciona **Cambiar plan >**.
 
    Nota: al habilitar el plan de servidores protección de cargas de trabajo en la nube (CWP) de Desactivado a Activado, se habilita el Plan 2 de Microsoft Defender para servidores.
-
-   ![imagen](https://github.com/user-attachments/assets/869a38e4-464e-4be0-b02e-ce1b96f02978)
+ 
+   ![imagen](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
    
 > **Resultados**: has habilitado el Plan 2 de Microsoft Defender para servidores en tu suscripción.

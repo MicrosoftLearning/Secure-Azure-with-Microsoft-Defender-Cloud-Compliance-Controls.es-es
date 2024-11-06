@@ -37,7 +37,7 @@ Al recopilar registros y datos, la información se almacena en un área de traba
    |Grupo de recursos|Escribe **az-rg-1.**|
    |**Detalles de instancia**|
    |Nombre|Escribe **azwrkspc1a.**|
-   |Región|Selecciona **Este de EE. UU**.|
+   |Región|Seleccione **Este de EE. UU**.|
 
 6. Selecciona la pestaña **Revisar + crear** de la parte inferior de la página.
   

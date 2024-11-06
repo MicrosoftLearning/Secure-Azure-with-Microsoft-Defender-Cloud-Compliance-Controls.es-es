@@ -5,7 +5,7 @@ lab:
 ---
 
 
->**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tiene acceso administrativo. 
+>**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tienes acceso administrativo. 
 
 
 Las reglas de recopilación de datos (DCR) especifican los datos que se van a recopilar, mientras que el agente de Azure Monitor aplica estas reglas para recopilar registros y métricas de máquinas virtuales en Azure, otras nubes o entornos locales. Juntos, permiten una supervisión coherente y centralizada en distintos entornos.
@@ -18,7 +18,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
 
 - Selección de recursos de destino para la recopilación de datos.
 
-- Instale un agente de Azure Monitor.
+- Instala un agente de Azure Monitor.
   
 - Configuración de orígenes y destinos de los datos.
 
@@ -45,7 +45,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |**Detalles de la regla**|
     |Nombre de regla|**dcr-1**|
     |Suscripción|Selecciona tu suscripción.|
-    |Resource group|**az-rg-1**|
+    |Grupo de recursos|**az-rg-1**|
     |Región|**Este de EE. UU.**|
     |Tipo de plataforma|**Windows**|
     |Punto de conexión de recopilación de datos|Deja la configuración predeterminada en Ninguno|
@@ -77,11 +77,11 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |Configuración|Valor|
     |---|---|
     |**Agregar origen de datos**|
-    |Seleccione el tipo de origen de datos y los datos que se recopilarán para los recursos.|
+    |Selecciona el tipo de origen de datos y los datos que se recopilarán para los recursos.|
     |Tipo de origen de datos*|**Registros de eventos de Windows**|
     |Elige Aspectos básicos para habilitar la recopilación de registros de eventos.|
     |Configura los niveles y registros de eventos que se van a recopilar:|
-    |Application|**Crítico**, **Error**, **Advertencia**|
+    |Aplicación|**Crítico**, **Error**, **Advertencia**|
     |Seguridad|**Auditoría correcta**, **Error de auditoría**|
     |Sistema|**Crítico**, **Error**, **Advertencia**|
 
@@ -96,7 +96,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |**Agregar origen de datos**|
     |Destino|**+ Incorporación del destino**|
     |Tipo de destino|**Registros de Azure Monitor**|
-    |Suscripción|Seleccione su suscripción.|
+    |Suscripción|Selecciona tu suscripción.|
     |Detalles del destino|**azwrkspc1a (az-rg-1**)|
 
     ![imagen](https://github.com/user-attachments/assets/e00c17c8-5a70-4caa-8504-92f482cc5e57)
