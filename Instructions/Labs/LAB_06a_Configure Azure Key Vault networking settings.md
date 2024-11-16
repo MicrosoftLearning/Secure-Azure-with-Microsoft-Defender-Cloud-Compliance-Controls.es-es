@@ -5,10 +5,10 @@ lab:
 ---
 
 
->**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tiene acceso administrativo. 
+>**Nota**: para completar este laboratorio, necesitarás una [suscripción de Azure.](https://azure.microsoft.com/en-us/free/?azure-portal=true) al que tienes acceso administrativo. 
 
 
-Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault para trabajar con otras aplicaciones y servicios de Azure. 
+Puedes usar Azure Portal para configurar las opciones de red de Azure Key Vault para trabajar con otras aplicaciones y servicios de Azure. 
 
 ---
 
@@ -24,34 +24,34 @@ Puede usar Azure Portal para configurar las opciones de red de Azure Key Vault 
 
 ### Uso de Azure Portal para crear una instancia de Azure Key Vault.
 
-1. Inicie una sesión en el explorador e inicie sesión en el [menú de Azure Portal.](https://portal.azure.com/)
+1. Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
+  
+2. En el cuadro de búsqueda que aparece en la parte superior del portal, especifica **almacenes de claves.** Selecciona **Almacenes de claves** en los resultados de la búsqueda.
+
+3. En la lista de resultados, elige **Almacenes de claves**.
+
+4. En la sección Key Vaults, elige **Crear.**
+
+5. En la pestaña **Aspectos Básicos** de **Crear almacén de claves**, escribe o selecciona esta información:
    
-2. En el cuadro de búsqueda de Azure Portal, escriba **Key Vault.**
-
-3. En la lista de resultados, elija **Key Vault**.
-
-4. En la sección Key Vaults, elija **Crear.**
-
-5. En la pestaña **Aspectos Básicos** de **Crear almacén de claves**, escriba o seleccione esta información:
-   
-   |Configuración|Value|
+   |Configuración|Valor|
    |---|---|
    |**Detalles del proyecto**|
-   |Subscription|Selecciona tu suscripción.|
+   |Suscripción|Selecciona tu suscripción.|
    |Grupo de recursos|Escribe **az-rg-1.**|
    |**Detalles de instancia**|
    |Nombre del almacén de claves|El nombre del almacén solo debe contener caracteres alfanuméricos y guiones y no puede empezar por un número. *Ejemplo: az-securevault150*|
-   |Region|Selecciona **Este de EE. UU**.|
+   |Región|Seleccione **Este de EE. UU**.|
    |Plan de tarifa|Deja la configuración predeterminada en Estándar.|
    |Días durante los cuales se conservarán los almacenes eliminados|Deja la configuración predeterminada en 90.|
 
-7. Selecciona la **pestaña Revisar y crear** o selecciona el botón azul Revisar y crear situado en la parte inferior de la página.
+6. Selecciona la **pestaña Revisar y crear** o selecciona el botón azul Revisar y crear situado en la parte inferior de la página.
   
-8. Seleccione **Crear**.
+7. Selecciona **Crear.**
 
 ### Configuración de firewall y redes virtuales de Key Vault.
 
-1. En el cuadro de búsqueda de Azure Portal, escriba **Key Vault.**
+1. En el cuadro de búsqueda de Azure Portal, escribe **almacenes de claves.**
 
 2. Ve al almacén de claves que has creado anteriormente.
 

@@ -22,7 +22,7 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 
 ### Configuración de características de seguridad mejoradas de Microsoft Defender for Cloud para servidores
 
-1. Inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
+1.  Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)         
 
 2. En Azure Portal, en el cuadro de texto Buscar recursos, servicios y documentos de la parte superior de la página, escribe **Microsoft Defender for Cloud** y pulsa la tecla **Entrar** 
 
@@ -30,11 +30,11 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 
    ![imagen](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
-3. En la hoja **Configuración**, en **Planes de Defender**, expande **Protección de cargas de trabajo en la nube (CWP)**.
+4. En la hoja **Configuración**, en **Planes de Defender**, expande **Protección de cargas de trabajo en la nube (CWP)**.
 
-4. En la lista **Plan de protección de cargas de trabajo en la nube (CWP)**, selecciona **Servidores**. En la parte derecha de la página, cambia el **Estado** de **Desactivado** a **Activado** y, después, haz clic en **Guardar**.
+5. En la lista **Plan de protección de cargas de trabajo en la nube (CWP)**, selecciona **Servidores**. En la parte derecha de la página, cambia el **Estado** de **Desactivado** a **Activado** y, después, haz clic en **Guardar**.
 
-5. Para revisar los detalles del **Plan 2 de Microsoft Defender para servidores**, selecciona **Cambiar plan >**.
+6. Para revisar los detalles del **Plan 2 de Microsoft Defender para servidores**, selecciona **Cambiar plan >**.
 
    Nota: al habilitar el plan de servidores protección de cargas de trabajo en la nube (CWP) de Desactivado a Activado, se habilita el Plan 2 de Microsoft Defender para servidores.
  

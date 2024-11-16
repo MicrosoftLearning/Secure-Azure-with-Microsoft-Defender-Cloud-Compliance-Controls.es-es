@@ -30,7 +30,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 1. Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
    
-2. En el cuadro de búsqueda de la parte superior del portal, escribe **Redes virtuales.** En los resultados de la búsqueda, selecciona **Redes virtuales**.
+2. En el cuadro de búsqueda de la parte superior del portal, escribe **redes virtuales.** En los resultados de la búsqueda, selecciona **Redes virtuales**.
 
 3. En la página **Redes virtuales**, selecciona **+ Crear**.
 
@@ -86,7 +86,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 >**Nota**: en esta tarea, crearás una máquina virtual que se usará para probar el punto de conexión privado.
 
-1. En el portal, busca y selecciona **Máquinas virtuales**.
+1. En el portal, busca y selecciona **máquinas virtuales.**
 
 2. En **Máquinas virtuales**, selecciona **+ Crear** y, después, **Máquina virtual de Azure**.
 
@@ -121,11 +121,9 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |---|---|
    |**Interfaz de red**|
    |Red virtual|Selecciona **vnet-2.**|
-   |Subred|Selecciona **subnet-2 (10.0.0.0/24).**|
-   |Dirección IP pública|Selecciona **Ninguno**.|
-   |Grupo de seguridad de red de NIC|Seleccione **Básica**.|
-   |Puertos de entrada públicos|Selecciona **Ninguno**.|
-   |Selección de puertos de entrada|La configuración predeterminada está atenuada.|
+   |Subnet|Deja la configuración predeterminada en subnet-2 (10.0.0.0/24).|
+   |Dirección IP pública|Deja la configuración predeterminada en (new) vm-3-ip.|
+   |Grupo de seguridad de red de NIC|Deja la configuración predeterminada en Ninguno.|
    |Eliminar NIC al eliminar la VM|Deja activada la configuración predeterminada en Habilitar redes aceleradas.|
    |Equilibrio de carga|Deja la configuración predeterminada en Ninguno.|
   
@@ -189,25 +187,25 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 10. En **Crear un punto de conexión privado**, escribe o selecciona esta información:
 
-   |Configuración|Valor|
-   |---|---|
-   |Suscripción|Selecciona tu suscripción.|
-   |Grupo de recursos|Selecciona **az-rg-1.**|
-   |Ubicación|Selecciona **Este de EE. UU**.|
-   |Nombre|Escribe **az-pe1a.**|
-   |Recurso secundario de destino|Deja la configuración predeterminada en SqlServer.|
-   |**Redes**|
-   |Red virtual|Selecciona **vnet-2.**|
-   |Subred|Selecciona **subnet-2.**|
-   |**Integración de DNS privado**|
-   |Integración con una zona DNS privada|Deja la configuración predeterminada en Sí.|
-   |Zona DNS privada|Deja la configuración predeterminada (nuevo) privatelink.database.windows.net.|
+       |Configuración|Valor|
+       |---|---|
+       |Suscripción|Selecciona tu suscripción.|
+       |Grupo de recursos|Selecciona **az-rg-1.**|
+       |Ubicación|Selecciona **Este de EE. UU**.|
+       |Nombre|Escribe **az-pe1a.**|
+       |Recurso secundario de destino|Deja la configuración predeterminada en SqlServer.|
+       |**Redes**|
+       |Red virtual|Selecciona **vnet-2.**|
+       |Subred|Selecciona **subnet-2.**|
+       |**Integración de DNS privado**|
+       |Integración con una zona DNS privada|Deja la configuración predeterminada en Sí.|
+       |Zona DNS privada|Deja la configuración predeterminada (nuevo) privatelink.database.windows.net.|
 
-11. Selecciona **Aceptar.**
+12. Selecciona **Aceptar.**
 
-12. Selecciona **Revisar + crear.**
+13. Selecciona **Revisar + crear.**
 
-13. Seleccione **Crear**.
+14. Seleccione **Crear**.
 
 >**Nota**: la implementación de un punto de conexión privado y un servidor de Azure SQL puede tardar hasta 10 minutos en completar la creación de instancias.
 
@@ -226,10 +224,10 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 >**Nota**: las conexiones procedentes de las direcciones IP configuradas en la sección Reglas de firewall, más abajo, tendrán acceso a esta base de datos. De manera predeterminada, no se permiten direcciones IP públicas.
 
 5. Si es necesario, ve a la sección **Reglas de firewall** de la página **Redes** y selecciona **+ Agregar la dirección IPv4 de cliente** si tu dirección IP de cliente no se ha rellenado aún en los campos **Nombre de regla,****Dirección IPv4 inicial** y **Dirección IPv4 final**.
-    
-     ![imagen](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
 
-6. Si es necesario, selecciona **Guardar.**
+   ![imagen](https://github.com/user-attachments/assets/fff5bfb1-53fd-40ea-9a31-5a095e7f3dbc) 
+
+7. Selecciona **Guardar.**
 
 ### Prueba de la conectividad con el punto de conexión privado
 
@@ -241,48 +239,49 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 3. Introduce el nombre de usuario **Tenantadmin2** y la contraseña **Superuser#170** que has introducido durante la creación de la máquina virtual.
 
-   **Importante:** ve a la configuración de Edge/elementos emergentes y redirige/y cambia el conmutador Bloqueado a **desactivado,** antes de seleccionar Conectar.
+   **Importante:** Importante: ve a Configuración de Edge y ve a **Elementos emergentes y redirecciones.** Selecciona la opción radial etiquetada **Permitir siempre elementos emergentes y redireccionamientos desde https://portal.azure.com** y, después, haz clic en **Listo.**
 
 4. Selecciona el botón **Conectar**.
   
 5. Abre Windows PowerShell en el servidor después de conectarte.
 
-6. Reemplace **sqlserver-name** por el nombre del servidor SQL que creó en los pasos anteriores. Por ejemplo, escribe **nslookup az-sql-srv1a.database.windows.net** Recibirás un mensaje similar al que se muestra a continuación:
+6. Para comprobar la resolución de nombres del punto de conexión privado, escriba el siguiente comando en la ventana del terminal:
+
+   ```bash
+   nslookup server-name.database.windows.net
+
+>**Note**: Replace **sqlserver-name** with the name of the SQL server you created in the previous steps. For example, enter **nslookup az-sql-srv1a.database.windows.net** You’ll receive a message similar to the one shown below:
 
    ````
    
-   Server:  UnKnown
-   Address:  168.63.129.16
+   Server:  UnKnown Address:  168.63.129.16
    
-   Non-authoritative answer:
-   Name:    az-sql-srv1a.privatelink.database.windows.net
-   Address:  10.1.0.5
-   Aliases:  az-sql-srv1a.database.windows.net
+   Non-authoritative answer: Name:    az-sql-srv1a.privatelink.database.windows.net Address:  10.1.0.5 Aliases:  az-sql-srv1a.database.windows.net
    ````
    
->**Nota**: se devuelve una dirección IP privada de 10.1.0.5 para el nombre de SQL Server. Esta dirección se encuentra en la subred **az-sql-srv1a** de la red virtual **vnet-2** que has creado anteriormente.
+>**Note**: A  private IP address of 10.1.0.5 is returned for the SQL server name. This address is in **az-sql-srv1a** subnet of **vnet-2** virtual network you created previously.
 
-7. Instala [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) en **vm-3.**
+7. Install [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) on **vm-3.**
  
-8. Abre **SQL Server Management Studio**.
+8. Open **SQL Server Management Studio.**
 
-9. En **Conectar con el servidor**, escribe o selecciona esta información:
+9. In **Connect to server,** enter or select this information:
 
-    |Configuración|Valor|
+    |Setting|Value|
     |---|---|
-    |Tipo de servidor|Selecciona **Motor de base de datos**.|
-    |Nombre de servidor|Escribe **az-sql-srv1a.database.windows.net.**|
-    |Autenticación|Selecciona **Autenticación de SQL Server**.|
-    |Nombre de usuario|Escribe **Tenantadmin2**.|
-    |Contraseña|Introduce **Superuser#170**.|
-    |Recordar contraseña|Selecciona **Sí**.|
-    |Seguridad de la conectividad|
-    |Cifrado|Deja el valor predeterminado en Obligatorio.|
+    |Server type|Leave the default setting as Database Engine.|
+    |Server name|Enter **az-sql-srv1a.database.windows.net.**|
+    |Authentication|Select **SQL Server Authentication.**|
+    |User name|Enter **Tenantadmin2**.|
+    |Password|Enter **Superuser#170**.|
+    |Remember password|Select **Yes.**|
+    |Connectivity Security|
+    |Encryption|Leave the default setting as Mandatory.|
    
-10. Selecciona **Conectar.**
+10. Select **Connect.**
 
-11. Examina las bases de datos en el menú izquierdo.
+11. Browse databases from left menu.
 
-12. Cierra la conexión de escritorio remoto a vm-3.
+12. Close the remote desktop connection to vm-3.
   
-> **Resultados**: te has conectado a un Azure SQL Server con un punto de conexión privado de Azure con Azure Portal.
+> **Results**: You have connected to an Azure SQL server using an Azure Private Endpoint using the Azure portal.

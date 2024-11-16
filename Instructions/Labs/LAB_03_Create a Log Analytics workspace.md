@@ -24,11 +24,11 @@ Al recopilar registros y datos, la información se almacena en un área de traba
 
 1. Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
    
-2. En el menú de Azure Portal, introduce las **áreas de trabajo de Log Analytics** en el cuadro de búsqueda. Cuando comiences a escribir, la lista se filtrará en función de la entrada. Selecciona **Áreas de trabajo de Log Analytics**.
+2. En el cuadro de búsqueda de la parte superior del portal, escribe **áreas de trabajo de Log Analytics.** Selecciona **Áreas de trabajo de Log Analytics** en los resultados de la búsqueda.
 
-4. En la página **Áreas de trabajo de Log Analytics**, selecciona **+ Crear.**
+3. En la página **Áreas de trabajo de Log Analytics**, selecciona **+ Crear.**
 
-5. En la página **Aspectos básicos** de **Crear área de trabajo de Log Analytics,** introduce o selecciona esta información:
+4. En la página **Aspectos básicos** de **Crear área de trabajo de Log Analytics,** introduce o selecciona esta información:
    
    |Configuración|Valor|
    |---|---|
@@ -39,8 +39,8 @@ Al recopilar registros y datos, la información se almacena en un área de traba
    |Nombre|Escribe **azwrkspc1a.**|
    |Región|Seleccione **Este de EE. UU**.|
 
-6. Selecciona la pestaña **Revisar + crear** de la parte inferior de la página.
+5. Selecciona la pestaña **Revisar + crear** de la parte inferior de la página.
   
-8. Selecciona **Crear.**
+6. Selecciona **Crear.**
 
 > **Resultados:** has creado un área de trabajo de Log Analytics, para recopilar datos de recursos de Azure.

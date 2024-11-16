@@ -20,16 +20,18 @@ Si se elimina un almacén de claves que no tenga habilitada la eliminación temp
 
 ### Comprobar si la eliminación temporal está habilitada en un almacén de claves y habilitarla
 
-1. Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal.](https://portal.azure.com/)
+1. Inicia una sesión en el explorador e inicia sesión en el [menú de Azure Portal](https://portal.azure.com/).
+  
+2. En el cuadro de búsqueda que aparece en la parte superior del portal, especifica **almacenes de claves.** Selecciona **Almacenes de claves** en los resultados de la búsqueda.
    
-2. Selecciona el almacén de claves.
+3. Ve al almacén de claves que has creado anteriormente.
 
-3. En la hoja **Configuración**, selecciona **Propiedades**.
+4. En la hoja **Configuración**, selecciona **Propiedades**.
 
-4. Comprueba si el botón de selección situado junto a la eliminación temporal está establecido en **Habilitar protección de purga (aplique un período de retención obligatorio para almacenes eliminados y objetos de almacén).**
+5. Comprueba si el botón de selección situado junto a la eliminación temporal está establecido en **Habilitar protección de purga (aplique un período de retención obligatorio para almacenes eliminados y objetos de almacén).**
 
-5. Si la eliminación temporal no está habilitada en el almacén de claves, haz clic en el botón de selección **Habilitar protección de purga (aplicar un período de retención obligatorio para almacenes eliminados y objetos de almacén)** para habilitar la eliminación temporal y haz clic en **Guardar.**
+6. Si la eliminación temporal no está habilitada en el almacén de claves, haz clic en el botón de selección **Habilitar protección de purga (aplicar un período de retención obligatorio para almacenes eliminados y objetos de almacén)** para habilitar la eliminación temporal y haz clic en **Guardar.**
 
-![imagen](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
+   ![imagen](https://github.com/user-attachments/assets/8cc1d810-5a15-43fb-9dd8-1484af65897e)
 
 > **Resultados**: has habilitado correctamente la eliminación temporal, lo que garantiza que los recursos eliminados se conservan durante 90 días (de forma predeterminada) y se pueden recuperar, deshacer eficazmente la eliminación a través de Azure Portal.
