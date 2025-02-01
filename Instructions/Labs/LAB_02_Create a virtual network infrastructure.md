@@ -63,7 +63,7 @@ Puedes usar un grupo de seguridad de red de Azure para filtrar el tráfico de re
    |Propósito de subred|Deja la configuración predeterminada en Predeterminada.|
    |Nombre|Escriba **subnet-1**.|
    |Dirección inicial|Deja la configuración predeterminada en 10.0.0.0/16.|
-   |Size|Deja la configuración predeterminada en /24 (256 direcciones).|
+   |Tamaño|Deja la configuración predeterminada en /24 (256 direcciones).|
 
     ![imagen](https://github.com/user-attachments/assets/82076f64-6a7f-4235-942d-d83e32ed6ea1)
 
@@ -71,7 +71,7 @@ Puedes usar un grupo de seguridad de red de Azure para filtrar el tráfico de re
 
 11. Selecciona **Revisar y crear** en la parte inferior de la pantalla y, cuando se supere la validación, selecciona **Crear**.
 
-     ![imagen](https://github.com/user-attachments/assets/c53a04e4-d760-4e28-b998-1d48a56702f1)
+     ![image](https://github.com/user-attachments/assets/c53a04e4-d760-4e28-b998-1d48a56702f1)
 
 ### Creación de grupos de seguridad de aplicaciones para poder agrupar servidores con funciones similares, como los servidores web.
 
@@ -92,7 +92,7 @@ Un grupo de seguridad de aplicaciones (ASG) permite agrupar servidores con funci
    |Nombre|Escriba **asg-web**.|
    |Region|Seleccione **Este de EE. UU**.|  
     
-4. Seleccione **Revisar + crear**.
+4. Selecciona **Revisar + crear.**
 
 5. Selecciona **Crear.**
 
@@ -107,7 +107,7 @@ Un grupo de seguridad de aplicaciones (ASG) permite agrupar servidores con funci
    |Nombre|Escriba **asg-mgmt**.|
    |Region|Seleccione **Este de EE. UU**.|
 
-7. Seleccione **Revisar + crear**.
+7. Selecciona **Revisar + crear.**
 
 8. Selecciona **Crear.**
 
@@ -132,7 +132,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Nombre|Escriba **nsg-1**.|
    |Region|Seleccione **Este de EE. UU**.|  
     
-4. Seleccione **Revisar + crear**.
+4. Selecciona **Revisar + crear.**
 
 5. Selecciona **Crear**.
 
@@ -148,7 +148,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 4. En la página **nsg-1 | Subredes**, selecciona + **Asociar:**
 
-   ![imagen](https://github.com/user-attachments/assets/bfc18dd3-3345-4c05-9981-4f479d5f7c7e)
+   ![image](https://github.com/user-attachments/assets/bfc18dd3-3345-4c05-9981-4f479d5f7c7e)
 
 6. En **Asociación de subred**, selecciona **vnet-1 (test-rg)** en **Red virtual**.
 
@@ -168,7 +168,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |Source port ranges|Deja la configuración predeterminada en los intervalos de puerto.|
    |Destino|Seleccione **Grupo de seguridad de aplicación**.|
    |Grupos de seguridad de aplicaciones de destino|Seleccione **asg-web**.|
-   |Service|Deja la configuración predeterminada en Personalizada.|
+   |Servicio|Deja la configuración predeterminada en Personalizada.|
    |Intervalos de puertos de destino|Escriba **80 443**.|
    |Protocolo|Seleccione **TCP.**|
    |Action|Deja la configuración predeterminada en Permitir.|
@@ -231,7 +231,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
    |---|---|
    |**Interfaz de red**|
    |Virtual network|Seleccione **vnet-1**.|
-   |Subnet|Deja la configuración predeterminada en subnet-1 (10.0.0.0/24).|
+   |Subred|Deja la configuración predeterminada en subnet-1 (10.0.0.0/24).|
    |Dirección IP pública|Deja la configuración predeterminada en (new) vm-1-ip.|
    |Grupo de seguridad de red de NIC|Seleccione **Ninguno**.|
    
@@ -259,7 +259,7 @@ Un grupo de seguridad de red (NSG) protege el tráfico de red de una red virtual
 
 5. En la plantilla **Agregar grupos de seguridad de aplicaciones**, selecciona **asg-mgmt** en la plantilla **Grupos de seguridad de aplicaciones** y, a continuación, haz clic en el botón **Agregar** en la parte inferior de la página de plantilla.
 
-   ![imagen](https://github.com/user-attachments/assets/9bb38a91-8aa6-427b-9b6d-b01c5333ad4c)
+   ![image](https://github.com/user-attachments/assets/9bb38a91-8aa6-427b-9b6d-b01c5333ad4c)
 
 7. Repite los pasos anteriores para **vm-2**, seleccionando **asg-web** en la plantilla **Grupos de seguridad de aplicaciones**.
 

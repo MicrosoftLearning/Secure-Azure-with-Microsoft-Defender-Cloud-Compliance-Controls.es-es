@@ -32,6 +32,6 @@ Si se elimina un almacén de claves que no tenga habilitada la eliminación temp
 
 6. Si la eliminación temporal no está habilitada en el almacén de claves, haz clic en el botón de selección **Habilitar protección de purga (aplicar un período de retención obligatorio para almacenes eliminados y objetos de almacén)** para habilitar la eliminación temporal y haz clic en **Guardar.**
 
-   ![imagen](https://github.com/user-attachments/assets/8cc1d810-5a15-43fb-9dd8-1484af65897e)
+   ![image](https://github.com/user-attachments/assets/8cc1d810-5a15-43fb-9dd8-1484af65897e)
 
 > **Resultados**: has habilitado correctamente la eliminación temporal, lo que garantiza que los recursos eliminados se conservan durante 90 días (de forma predeterminada) y se pueden recuperar, deshacer eficazmente la eliminación a través de Azure Portal.

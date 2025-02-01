@@ -38,7 +38,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
   
 4. En la página **Reglas de recopilación de datos**, selecciona **+ Crear.**
   
-    ![imagen](https://github.com/user-attachments/assets/a472bc6f-fa96-4615-a67c-c99e8b9ce7a4)
+    ![image](https://github.com/user-attachments/assets/a472bc6f-fa96-4615-a67c-c99e8b9ce7a4)
 
 5. En la página **Aspectos básicos** del **panel Crear regla de recopilación de datos**, especifica la siguiente configuración (deja lo demás con los valores predeterminados):
 
@@ -52,27 +52,27 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |Tipo de plataforma|**Windows**|
     |Punto de conexión de recopilación de datos|Deja la configuración predeterminada en Ninguno|
 
-   ![imagen](https://github.com/user-attachments/assets/6c63c48f-f7a9-4fb2-8fc0-e22084cd5013)
+   ![image](https://github.com/user-attachments/assets/6c63c48f-f7a9-4fb2-8fc0-e22084cd5013)
 
 6. Haz clic en el botón situado en la parte inferior de la página **Aspectos básicos** con la etiqueta **Siguiente: Recursos > continuar.**
    
 7. En la página **Recursos**, selecciona **+ Agregar recursos.**
 
-   ![imagen](https://github.com/user-attachments/assets/7e45996b-478b-4be4-9df3-df6127da6cb4)
+   ![image](https://github.com/user-attachments/assets/7e45996b-478b-4be4-9df3-df6127da6cb4)
 
 8. En la plantilla **Seleccionar un ámbito**, activa la casilla **Suscripción** en la selección **Ámbito.**
 
-   ![imagen](https://github.com/user-attachments/assets/0d228e47-039e-4418-ae66-025957e368bc)
+   ![image](https://github.com/user-attachments/assets/0d228e47-039e-4418-ae66-025957e368bc)
 
 9. En la parte inferior de la plantilla **Seleccionar un ámbito**, haz clic en **Aplicar.**
   
 10. En la parte inferior de la página **Recursos**, selecciona **Siguiente: Recopilar y entregar >.**
 
-    ![imagen](https://github.com/user-attachments/assets/95556211-654f-4810-98a0-5cd8fac13bff)  
+    ![image](https://github.com/user-attachments/assets/95556211-654f-4810-98a0-5cd8fac13bff)  
 
 11. En la **página Recopilar y entregar**, haz clic en **+ Agregar origen de datos.**
 
-    ![imagen](https://github.com/user-attachments/assets/8274b0c1-8617-4889-9aef-78e050f2bd00)
+    ![image](https://github.com/user-attachments/assets/8274b0c1-8617-4889-9aef-78e050f2bd00)
 
 12. En la plantilla **Agregar origen de datos**, en **Tipo de origen de datos**, selecciona la siguiente configuración:
     
@@ -87,7 +87,7 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |Seguridad|**Auditoría correcta**, **Error de auditoría**|
     |Sistema|**Crítico**, **Error**, **Advertencia**|
 
-    ![imagen](https://github.com/user-attachments/assets/33039994-0613-40f4-9c55-03f795b38b9b)
+    ![image](https://github.com/user-attachments/assets/33039994-0613-40f4-9c55-03f795b38b9b)
 
 13. En la parte inferior de la plantilla **Agregar origen de datos**, selecciona **Siguiente: Destino >.**
 
@@ -101,16 +101,16 @@ Las reglas de recopilación de datos (DCR) especifican los datos que se van a re
     |Suscripción|Selecciona tu suscripción.|
     |Detalles del destino|**azwrkspc1a (az-rg-1**)|
 
-     ![imagen](https://github.com/user-attachments/assets/dc2d2906-4a57-4df9-a33c-fd6ae34a8457)
+     ![image](https://github.com/user-attachments/assets/dc2d2906-4a57-4df9-a33c-fd6ae34a8457)
 
 15. En la parte inferior de la plantilla **Agregar origen de datos**, selecciona **Agregar origen de datos.**
 
 16. En la parte inferior de la página **Recopilar y entregar**, selecciona **Revisar + crear.**
 
-    ![imagen](https://github.com/user-attachments/assets/4277089c-971c-4334-a49d-6ac6bfe93ff4)
+    ![image](https://github.com/user-attachments/assets/4277089c-971c-4334-a49d-6ac6bfe93ff4)
 
 17. En la parte inferior de la página **Revisar + crear**, selecciona **Crear.**
 
-    ![imagen](https://github.com/user-attachments/assets/b532f92e-af10-4b4d-bb52-10d15ad38d4a)
+    ![image](https://github.com/user-attachments/assets/b532f92e-af10-4b4d-bb52-10d15ad38d4a)
 
 > **Resultados**: has instalado el agente de Azure Monitor y creado una regla de recopilación de datos.
