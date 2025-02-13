@@ -1,3 +1,11 @@
+#README
+
+We've turned off the ability to report issues directly on this repo and do not monitor PRs.
+
+Provide feedback here: https://aka.ms/provide-feedback
+
+Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
+
 # Protección de los servicios y cargas de trabajo de Azure con los controles de cumplimiento normativo de Microsoft Defender for Cloud
 
 **¿Eres un MCT?** Consulta nuestra [guía de usuario de GitHub para MCT](https://microsoftlearning.github.io/MCT-User-Guide/).
