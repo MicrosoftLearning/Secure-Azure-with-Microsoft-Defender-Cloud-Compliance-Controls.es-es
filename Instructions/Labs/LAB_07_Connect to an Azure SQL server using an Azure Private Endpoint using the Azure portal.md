@@ -71,7 +71,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
     |Incluir un espacio de direcciones IPv4|Deja la configuración predeterminada con la marca de verificación.|
     |Intervalo de direcciones IPv4|Deja la configuración predeterminada en 10.0.0.0/16.|
     |Dirección inicial|10.0.0.0.|
-    |Size|Deja la configuración predeterminada en /24 (256 direcciones).|
+    |Tamaño|Deja la configuración predeterminada en /24 (256 direcciones).|
     |Intervalo de direcciones de subred|10.0.0.0-10.0.0.255.|
 
 11. En la parte inferior de la página **Editar subred**, selecciona **Guardar.**
@@ -121,7 +121,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
    |---|---|
    |**Interfaz de red**|
    |Red virtual|Selecciona **vnet-2.**|
-   |Subnet|Deja la configuración predeterminada en subnet-2 (10.0.0.0/24).|
+   |Subred|Deja la configuración predeterminada en subnet-2 (10.0.0.0/24).|
    |Dirección IP pública|Deja la configuración predeterminada en (new) vm-3-ip.|
    |Grupo de seguridad de red de NIC|Deja la configuración predeterminada en Ninguno.|
    |Eliminar NIC al eliminar la VM|Deja activada la configuración predeterminada en Habilitar redes aceleradas.|
@@ -181,7 +181,7 @@ Un punto de conexión privado de Azure es el bloque de creación fundamental par
 
 7. En la sección **Puntos de conexión privados**, selecciona **+ Agregar punto de conexión privado.**
 
-8. Seleccione **Revisar + crear**.
+8. Selecciona **Revisar + crear.**
 
 9. Seleccione **Crear**.
 

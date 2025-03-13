@@ -28,7 +28,7 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 
 3. En **Microsoft Defender for Cloud**, **hoja de Administración**, ve a **Configuración del entorno**. Expande las carpetas de configuración del entorno hasta que se muestre la sección **suscripción** y, después, haz clic en la **suscripción** para ver los detalles.
 
-   ![imagen](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
+   ![image](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
 4. En la hoja **Configuración**, en **Planes de Defender**, expande **Protección de cargas de trabajo en la nube (CWP)**.
 
@@ -38,6 +38,6 @@ El objetivo principal de este ejercicio es proporcionar experiencia práctica en
 
    Nota: al habilitar el plan de servidores protección de cargas de trabajo en la nube (CWP) de Desactivado a Activado, se habilita el Plan 2 de Microsoft Defender para servidores.
  
-   ![imagen](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
+   ![image](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
    
 > **Resultados**: has habilitado el Plan 2 de Microsoft Defender para servidores en tu suscripción.
